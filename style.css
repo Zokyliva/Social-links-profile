@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Inter-Bold";
+    src: url("assets/fonts/static/Inter-Bold.ttf");
+}
+
+body {
+    background-color: rgb(8, 8, 8);
+    color: aliceblue;
+    font-family: "Inter-Bold";
+    font-size: 14px;
+    max-height: 100vh;
+}
+
+.cadre {
+    width: 18%;
+    background-color: rgb(23, 22, 22);
+    border-radius: 10px;
+    text-align: center;
+    margin: 80px auto;
+    padding: 30px;
+}
+
+h4{
+    color: rgb(195, 216, 34);
+}
+
+.cadre .photo img{
+    width: 65px;
+    border-radius: 100px;
+}
+
+.cadre button{
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    width: 95%;
+    height: 30px;
+    margin: 6px auto;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(59, 54, 54);
+    transition: 0.3s ease;
+}
+
+.cadre button:hover{
+    color: rgb(14, 13, 13);
+    font-weight: 700;
+    background-color: rgb(195, 216, 34);
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width : 375px) {
+    .cadre {
+        width: 65%;
+        margin: 80px auto;
+        padding: 20px;
+        font-size: 12px;
+    }
+}
+
