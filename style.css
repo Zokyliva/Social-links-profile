@@ -12,7 +12,7 @@ body {
 }
 
 .cadre {
-    width: 18%;
+    width: 20%;
     background-color: rgb(23, 22, 22);
     border-radius: 10px;
     text-align: center;
@@ -25,8 +25,27 @@ h4{
 }
 
 .cadre .photo img{
-    width: 65px;
-    border-radius: 100px;
+    width: 70px;
+    border-radius: 50%;
+    animation: photoetincelle 2.5s linear infinite;
+}
+
+@keyframes photoetincelle{
+    0%{
+        box-shadow: 0px 0px 10px 2px white;
+    }
+    40%{
+        box-shadow: 0px 0px 7px 2px white;
+    }
+    60%{
+        box-shadow: 0px 0px 5px 2px white;
+    }
+    80%{
+        box-shadow: 0px 0px 7px 2px white;
+    }
+    100%{
+        box-shadow: 0px 0px 10px 2px white;
+    }
 }
 
 .cadre button{
@@ -51,7 +70,16 @@ h4{
 
 @media screen and (max-width : 375px) {
     .cadre {
-        width: 65%;
+        width: 85%;
+        margin: 80px auto;
+        padding: 20px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .cadre {
+        width: 45%;
         margin: 80px auto;
         padding: 20px;
         font-size: 12px;
